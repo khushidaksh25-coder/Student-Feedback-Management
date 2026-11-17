@@ -1,0 +1,384 @@
+
+/* General CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6fc;
+    color: #29234f;
+}
+
+/* Navbar */
+header {
+    background-color: #ffffff;
+    padding: 20px 4%;
+    box-shadow: 0 2px 12px rgba(40, 30, 80, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #7545d6;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-text {
+    color: #77718a;
+    font-size: 14px;
+}
+
+/* Navigation links */
+nav a {
+    color: #77718a;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8050df;
+}
+
+/* Main */
+main {
+    min-height: 85vh;
+    padding: 50px 20px;
+}
+
+/* Welcome Section */
+#welcomeSection {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.welcome-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #eee7ff;
+    color: #8050df;
+    padding: 9px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.welcome-content h1 {
+    font-size: 42px;
+    color: #29234f;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.welcome-content h1 span {
+    color: #8050df;
+}
+
+.welcome-content p {
+    color: #77718a;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(135deg, #8050df, #6840bd);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5934a9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(128, 80, 223, 0.2);
+}
+
+/* Information Cards */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 65px;
+}
+
+.info-card {
+    background-color: white;
+    padding: 28px 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(40, 30, 80, 0.06);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #8050df;
+}
+
+.info-card h4 {
+    color: #29234f;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.info-card p {
+    color: #77718a;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Feedback Form Section */
+#feedbackSection,
+#successSection {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(40, 30, 80, 0.07);
+}
+
+/* All Feedback Section */
+#allFeedbackSection {
+    width: 100%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #f1ebfa;
+    padding: 70px 4%;
+    border-radius: 18px;
+}
+
+/* Section Heading */
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h1 {
+    color: #29234f;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: #77718a;
+    font-size: 15px;
+}
+
+/* All Feedback Heading */
+#allFeedbackSection .section-heading {
+    text-align: left;
+}
+
+#allFeedbackSection .section-heading h1 {
+    font-size: 28px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+label {
+    color: #514477;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e2dced;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    background-color: #faf9fd;
+    color: #29234f;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #8050df;
+    box-shadow: 0 0 0 3px rgba(128, 80, 223, 0.1);
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+/* Success Section */
+#successSection {
+    text-align: center;
+}
+
+.success-content h1 {
+    color: #8050df;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.success-content h2 {
+    color: #29234f;
+    margin-bottom: 15px;
+}
+
+.success-content p {
+    color: #77718a;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* All Feedback List */
+#feedbackList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* Feedback Cards */
+.feedback-card {
+    background-color: #ffffff;
+    border: none;
+    border-left: 4px solid #8050df;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 18px rgba(40, 30, 80, 0.06);
+    transition: 0.3s;
+}
+
+.feedback-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(40, 30, 80, 0.1);
+}
+
+.feedback-card h3 {
+    color: #29234f;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.feedback-card p {
+    color: #77718a;
+    line-height: 1.7;
+    margin-top: 8px;
+}
+
+.feedback-card .rating {
+    color: #e5a72e;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #eee9f5;
+}
+
+footer p {
+    color: #77718a;
+    font-size: 13px;
+}
+
+/* Hide Sections */
+[hidden] {
+    display: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+
+    header {
+        padding: 18px 20px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .welcome-content h1 {
+        font-size: 30px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    #feedbackSection,
+    #successSection {
+        padding: 25px 20px;
+    }
+
+    #allFeedbackSection {
+        padding: 40px 20px;
+    }
+
+    .section-heading h1 {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .nav-text {
+        display: none;
+    }
+
+    .welcome-content h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        margin-left: 6px;
+        font-size: 11px;
+    }
+}
+

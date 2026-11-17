@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Student Feedback Manager</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <h2 class="logo">Student Feedback</h2>
+
+        <span class="nav-text">Your Voice Matters</span>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Welcome Section -->
+      <section id="welcomeSection">
+        <div class="welcome-content">
+          <span class="tag">✦ STUDENT FEEDBACK PORTAL</span>
+
+          <h1>
+            We Value Your
+            <span>Feedback!</span>
+          </h1>
+
+          <p>
+            Your opinions help us create a better learning environment. Share
+            your experience and help us improve.
+          </p>
+
+          <button id="giveFeedbackBtn">Give Feedback →</button>
+        </div>
+
+        <!-- Information Cards -->
+        <div class="info-cards">
+          <div class="info-card">
+            <h3>💬</h3>
+            <h4>Share Your Ideas</h4>
+            <p>Tell us about your experience.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>⭐</h3>
+            <h4>Rate Your Experience</h4>
+            <p>Give us your valuable rating.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>💜</h3>
+            <h4>Help Us Improve</h4>
+            <p>Your feedback makes a difference.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback Form Section -->
+      <section id="feedbackSection" hidden>
+        <div class="section-heading">
+          <h1>Student Feedback Form</h1>
+
+          <p>We would love to hear from you!</p>
+        </div>
+
+        <form id="feedbackForm">
+          <label for="name">Student Name</label>
+
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <label for="rating">Your Rating</label>
+
+          <select id="rating" required>
+            <option value="">Select your rating</option>
+            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4">⭐⭐⭐⭐ Very Good</option>
+            <option value="3">⭐⭐⭐ Good</option>
+            <option value="2">⭐⭐ Average</option>
+            <option value="1">⭐ Poor</option>
+          </select>
+
+          <label for="comment">Your Feedback</label>
+
+          <textarea
+            id="comment"
+            placeholder="Write your experience here..."
+            required
+          ></textarea>
+
+          <button type="submit">Submit Feedback →</button>
+        </form>
+      </section>
+
+      <!-- Success Section -->
+      <section id="successSection" hidden>
+        <h2>Feedback Submitted Successfully!</h2>
+        <p>Thank you for your feedback.</p>
+        <div class="success-content">
+          <h1>✓</h1>
+
+          <h2>Thank You for Your Feedback!</h2>
+
+          <p>
+            Your feedback has been submitted successfully. We appreciate your
+            time.
+          </p>
+
+          <button id="viewFeedbackBtn">View All Student Feedback →</button>
+        </div>
+      </section>
+
+      <!-- All Feedback Section -->
+      <section id="allFeedbackSection" hidden>
+        <div class="section-heading">
+          <h1>All Student Feedback</h1>
+
+          <p>See what students have shared with us.</p>
+        </div>
+
+        <div id="feedbackList">
+          <!-- Feedback cards will appear here using JavaScript -->
+        </div>
+
+        <button id="backBtn">← Back to Home</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Student Feedback Manager | Made with 💜</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
